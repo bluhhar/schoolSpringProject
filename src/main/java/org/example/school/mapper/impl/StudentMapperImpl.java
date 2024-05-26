@@ -3,7 +3,9 @@ package org.example.school.mapper.impl;
 import org.example.school.dto.StudentDto;
 import org.example.school.mapper.StudentMapper;
 import org.example.school.model.Student;
+import org.springframework.stereotype.Component;
 
+@Component
 public class StudentMapperImpl implements StudentMapper {
 
     @Override
