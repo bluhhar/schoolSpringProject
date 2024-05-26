@@ -23,6 +23,6 @@ public class StudentMapperImpl implements StudentMapper {
         entity.setId(student.getId());
         entity.setFirstName(student.getFirstName());
         entity.setLastName(student.getLastName());
-        return null;
+        return entity;
     }
 }
