@@ -24,4 +24,9 @@ public class StudentServiceImpl implements StudentService {
     public Student save(StudentDto student) {
         return repository.save(mapper.toEntity(student));
     }
+
+    @Override
+    public Student getStudent(Long id) {
+        return repository.findById(id);
+    }
 }

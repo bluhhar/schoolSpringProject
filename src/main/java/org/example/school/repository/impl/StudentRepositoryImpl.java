@@ -25,4 +25,9 @@ public class StudentRepositoryImpl implements StudentRepository {
         students.put(student.getId(), student);
         return student;
     }
+
+    @Override
+    public Student findById(Long id) {
+        return students.get(id);
+    }
 }

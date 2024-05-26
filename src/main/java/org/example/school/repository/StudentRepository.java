@@ -4,4 +4,6 @@ import org.example.school.model.Student;
 
 public interface StudentRepository { //extends CrudRepository<Student, Long> {
     Student save(Student student);
+
+    Student findById(Long id);
 }

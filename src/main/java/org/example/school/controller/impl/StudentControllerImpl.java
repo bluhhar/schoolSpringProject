@@ -25,4 +25,10 @@ public class StudentControllerImpl implements StudentController {
         Student s = service.save(student);
         return mapper.toDto(s);
     }
+
+    @Override
+    public StudentDto getStudent(Long id) {
+        Student s = service.getStudent(id);
+        return mapper.toDto(s);
+    }
 }
